@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/meritt/node-4sq.png)](http://travis-ci.org/meritt/node-4sq)
 # 4sq
 
 A Node.JS wrapper for [Foursquare API](https://developer.foursquare.com/overview/).
