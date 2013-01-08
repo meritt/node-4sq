@@ -1,5 +1,5 @@
 ###
-  node-4sq 0.0.1
+  node-4sq 0.1.0
   (c) 2012 Alexey Simonenko, Serenity LLC.
 ###
 
