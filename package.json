@@ -1,25 +1,25 @@
 {
     "name": "4sq"
   , "version": "0.0.1"
-  , "homepage": "http://github.com/meritt/node-4sq"
-  , "author": "Alexey Simonenko <alexey@simonenko.su>"
   , "description": "Wrapper for the Foursquare API"
   , "keywords": ["foursquare", "4sq", "api", "wrapper"]
+  , "author": "Alexey Simonenko <alexey@simonenko.su>"
+  , "homepage": "http://simonenko.su/projects/node-4sq"
+  , "main": "./lib/foursquare"
   , "repository": {
         "type": "git"
-      , "url": "http://github.com/meritt/node-4sq.git"
+      , "url": "https://github.com/meritt/node-4sq.git"
     }
-  , "main": "./lib/foursquare"
   , "engines": {
-      "node": ">=0.6.0 <0.7.0"
+      "node": ">=0.6.0 <0.9.0"
     }
   , "dependencies": {
-      "request": ">=2.9.200"
+      "request": "2.12.x"
     }
   , "devDependencies": {
-      "coffee-script": ">=1.3.0"
-    , "everyauth": ">=0.2.32"
-    , "express": ">=2.5.9"
-    , "ejs": ">=0.7.1"
+      "coffee-script": "1.4.x"
+    , "everyauth": "0.2.x"
+    , "express": "2.5.x"
+    , "ejs": "0.7.x"
   }
 }
