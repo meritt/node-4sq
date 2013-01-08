@@ -1,6 +1,6 @@
 # 4sq
 
-A Node.JS wrapper for [Foursquare API](https://developer.foursquare.com/overview/).
+A Node.JS wrapper for the [Foursquare API](https://developer.foursquare.com/overview/).
 
 How to use with JavaScript
 --------------------------
@@ -32,27 +32,23 @@ fsq.checkins 'self', limit: 5, (error, data) ->
   console.log data
 ```
 
+----------------
+
 Install with NPM
 ----------------
 
-```
-npm install 4sq
-```
+	npm install 4sq
 
 How to retrieve Foursquare OAuth2 access_token
-------------------------------------------
+----------------------------------------------
 
 Grab latest source code and install all dev dependencies
 
-```
-npm link
-```
+	npm link
 
 Change your host, client id, client secret in [examples/get-access-token.coffee](http://github.com/meritt/node-4sq/blob/master/examples/get-access-token.coffee) and after that run [examples/get-access-token.coffee](http://github.com/meritt/node-4sq/blob/master/examples/get-access-token.coffee)
 
-```
-coffee examples/get-access-token.coffee
-```
+	coffee examples/get-access-token.coffee
 
 API
 ---
@@ -64,4 +60,4 @@ API
 Author
 ------
 
-* Alexey Simonenko, dwarfman@gmail.com
+* [Alexey Simonenko](mailto:alexey@simonenko.su), [simonenko.su](http://simonenko.su)
