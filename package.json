@@ -1,6 +1,6 @@
 {
     "name": "4sq"
-  , "version": "0.1.0"
+  , "version": "0.1.1"
   , "description": "Wrapper for the Foursquare API"
   , "keywords": ["foursquare", "4sq", "api", "wrapper"]
   , "author": "Alexey Simonenko <alexey@simonenko.su>"

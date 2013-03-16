@@ -1,9 +1,3 @@
-###
-  node-4sq 0.1.0
-  (c) 2012 Alexey Simonenko, Serenity LLC.
-###
-
-# Constructor
 xhr = require 'request'
 qs  = require 'querystring'
 
