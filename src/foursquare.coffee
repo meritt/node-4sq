@@ -50,9 +50,13 @@ class Foursquare
     params = url: "#{apihost}/#{version}#{self.scheme}?oauth_token=#{self.options.token}&#{query}"
 
     xhr params, (error, request, body) ->
-      body  = JSON.parse body
-      error = body.meta if body.meta.code isnt 200
-      data  = if body.response? then body.response else null
+      try
+        body  = JSON.parse body
+        error = body.meta if body.meta.code isnt 200
+        data  = if body.response? then body.response else null
+      catch error
+        data = null
+        error = new Error 'Unable to parse JSON response from foursquare.'
 
       fn.call self, error, data
 
