@@ -2,7 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/4sq.png)](http://badge.fury.io/js/4sq) [![Dependency Status](https://david-dm.org/meritt/node-4sq.png)](https://david-dm.org/meritt/node-4sq)
 
-A Node.JS wrapper for the [Foursquare API](https://developer.foursquare.com/overview/).
+A node.js wrapper for the [Foursquare API](https://developer.foursquare.com/overview/).
 
 ## Installation
 
@@ -13,9 +13,11 @@ $ npm install 4sq
 ## Examples
 
 ```js
-var foursquare = require('4sq');
+var Foursquare = require('4sq');
 
-var fsq = new foursquare({token: 'OAuth2 access_token'});
+var fsq = new Foursquare({
+  token: 'OAuth2 access_token'
+});
 
 fsq.checkins('self', {limit: 5}, function(error, data) {
   if (error) {
@@ -27,9 +29,9 @@ fsq.checkins('self', {limit: 5}, function(error, data) {
 ```
 
 ```coffeescript
-foursquare = require '4sq'
+Foursquare = require '4sq'
 
-fsq = new foursquare token: 'OAuth2 access_token'
+fsq = new Foursquare token: 'OAuth2 access_token'
 
 fsq.checkins 'self', limit: 5, (error, data) ->
   throw new Error error if error
@@ -52,9 +54,11 @@ $ coffee examples/get-access-token.coffee
 
 ## API
 
-* user (user_id, params, callback)
-* checkins (user_id, params, callback)
-* badges (user_id, params, callback)
+* user (user_id[, params], callback)
+* checkins (user_id[, params], callback)
+* badges (user_id[, params], callback)
+
+By default `user_id` set to `self`.
 
 ## Author
 
@@ -63,3 +67,5 @@ $ coffee examples/get-access-token.coffee
 ## License
 
 The MIT License, see the included `license.md` file.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/meritt/node-4sq/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
